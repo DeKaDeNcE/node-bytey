@@ -1,5 +1,5 @@
 /*!
-	bytey (https://github.com/Kruithne/bytey)
+	bytey (https://github.com/Kruithne/node-bytey)
 	Author: Kruithne <kruithne@gmail.com>
 	License: MIT
  */
