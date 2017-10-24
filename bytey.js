@@ -1,3 +1,9 @@
+/*!
+	bytey (https://github.com/Kruithne/bytey)
+	Author: Kruithne <kruithne@gmail.com>
+	License: MIT
+ */
+
 module.exports = {
 	/**
 	 * Check if two byte-arrays are equal.

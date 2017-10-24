@@ -1,6 +1,6 @@
 {
   "name": "bytey",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple byte-array conversion utility.",
   "main": "bytey.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "bytey"
   ],
   "author": "Kruithne <kruithne@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kruithne/bytey/issues"
   },
