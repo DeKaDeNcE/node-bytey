@@ -26,4 +26,8 @@ bytey.utf8ToByteArray('こんにちは');
 // Convert byte-array to UTF8 string.
 bytey.byteArrayToUtf8([227, 129, 147, 227, 130, 147, 227, 129, 171, 227, 129, 161, 227, 129, 175]);
 // -> 'こんにちは'
+
+// Check if two byte arrays are equals.
+bytey.isByteArrayEqual([200, 55, 24], [200, 54, 24]);
+// -> false
 ```
