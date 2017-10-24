@@ -1,0 +1,29 @@
+{
+  "name": "bytey",
+  "version": "1.0.0",
+  "description": "Simple byte-array conversion utility.",
+  "main": "bytey.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kruithne/bytey.git"
+  },
+  "keywords": [
+    "byte",
+    "array",
+    "utility",
+    "convert",
+    "string",
+    "utf8",
+    "hex",
+    "bytey"
+  ],
+  "author": "Kruithne <kruithne@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kruithne/bytey/issues"
+  },
+  "homepage": "https://github.com/Kruithne/bytey#readme"
+}
