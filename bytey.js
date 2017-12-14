@@ -4,14 +4,14 @@
 	License: MIT
  */
 
-bytey = {
+class bytey {
 	/**
 	 * Check if two byte-arrays are equal.
 	 * @param {Array} arr1
 	 * @param {Array} arr2
 	 * @returns {boolean}
 	 */
-	isByteArrayEqual: (arr1, arr2) => {
+	static isByteArrayEqual (arr1, arr2) {
 		if(!Array.isArray(arr1) || !Array.isArray(arr2))
 			throw new Error('bytey.isByteArrayEqual() expects two arrays.');
 
@@ -25,28 +25,28 @@ bytey = {
 				return false;
 
 		return true;
-	},
+	}
 
 	/**
 	 * Convert a byte-array to a hex string.
 	 * @param {Array} byteArray
 	 * @returns {string}
 	 */
-	byteArrayToHexString: (byteArray) => {
+	static byteArrayToHexString (byteArray) {
 		if (!Array.isArray(byteArray))
 			throw new Error('bytey.byteArrayToHexString() expects an array.');
 
 		return Array.from(byteArray, (byte) => {
 			return ('0' + (byte & 0xFF).toString(16)).slice(-2);
 		}).join('');
-	},
+	}
 
 	/**
 	 * Convert a hex string to a byte-array.
 	 * @param {string} hexString
 	 * @returns {Array}
 	 */
-	hexStringToByteArray: (hexString) => {
+	static hexStringToByteArray (hexString) {
 		if (typeof(hexString) !== 'string')
 			throw new Error('bytey.hexStringToByteArray() expects a string.');
 
@@ -55,7 +55,7 @@ bytey = {
 			result.push(parseInt(hexString.substring(i, i + 2), 16));
 
 		return result;
-	},
+	}
 
 	/**
 	 * Convert a UTF8 string to a byte-array.
@@ -63,7 +63,7 @@ bytey = {
 	 * @param {string} str
 	 * @returns {Array}
 	 */
-	utf8ToByteArray: (str) => {
+	static utf8ToByteArray (str) {
 		if (typeof str !== 'string')
 			throw new Error('bytey.utf8ToByteArray() expects a string.');
 
@@ -88,7 +88,7 @@ bytey = {
 			}
 		}
 		return out;
-	},
+	}
 
 	/**
 	 * Convert a byte-array to a UTF8 string.
@@ -96,7 +96,7 @@ bytey = {
 	 * @param {Array} arr
 	 * @returns {string}
 	 */
-	byteArrayToUtf8: (arr) => {
+	static byteArrayToUtf8 (arr) {
 		if (!Array.isArray(arr))
 			throw new Error('bytey.byteArrayToUtf8() expects an array.');
 
@@ -123,7 +123,7 @@ bytey = {
 		}
 		return out.join('');
 	}
-};
+}
 
 // Export to NodeJS.
 if (typeof module === 'object' && typeof module.exports === 'object')
