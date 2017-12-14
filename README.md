@@ -1,14 +1,19 @@
 # bytey
-A simple NodeJS module that provides byte-array utility.
+A simple JavaScript/NodeJS module that provides byte-array utility.
 
 ## Installing
+### Browser
+```html
+<script type="text/javascript" src="bytey.js"/>
+```
+### Node JS
 ```
 npm install bytey
 ```
 
 ## Usage
 ```javascript
-// Require the module, obviously.
+// In NodeJS, import the module.
 const bytey = require('bytey');
 
 // Convert hex string to byte-array.

@@ -4,7 +4,7 @@
 	License: MIT
  */
 
-module.exports = {
+bytey = {
 	/**
 	 * Check if two byte-arrays are equal.
 	 * @param {Array} arr1
@@ -124,3 +124,7 @@ module.exports = {
 		return out.join('');
 	}
 };
+
+// Export to NodeJS.
+if (typeof module === 'object' && typeof module.exports === 'object')
+	module.exports = bytey;
